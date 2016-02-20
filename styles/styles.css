@@ -11,4 +11,22 @@ table{border-collapse:collapse;border-spacing:0}
 /* --- MAIN STYLES --- */
 body {
 	font-family: 'Droid Serif', serif;
+	background-color: #bbe9fe;
+}
+
+img {
+	height: 300px;
+	width: 300px;
+	display: block;
+	margin: auto;
+	border: 3px solid #000;
+	border-radius: 50%;
+}
+
+h1 {
+
+}
+
+p {
+
 }
