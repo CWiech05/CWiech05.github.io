@@ -1,0 +1,80 @@
+/* --- MAIN STYLES --- */
+body {
+	font-family: 'Lato', sans-serif;
+	background-color: #0E005E;
+	color: #54C84A;
+}
+
+nav, 
+h1, 
+h3 {
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+
+
+/* --- LINKS --- */
+a {
+	text-decoration: none;
+	color: #54C84A;
+}
+
+a:hover {
+	color: #fff;
+}
+
+
+/* --- IMAGES --- */
+img {
+	vertical-align: baseline;
+}
+
+
+/* --- NAV --- */
+nav li {
+	display: inline;
+}
+
+nav li a {
+	display: inline-block;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+
+/* --- HEADER --- */
+header {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+header h2 {
+	font-size: 1.5em;
+	margin-top: -10px;
+}
+
+
+/* --- WORK SECTION --- */
+
+
+
+/* --- PLAY SECTION --- */
+
+
+
+/* --- SKILLS SECTION --- */
+
+
+
+/* --- SOCIAL SECTION --- */
+
+
+
+/* --- FOOTER --- */
+
+
+
+
+
+
