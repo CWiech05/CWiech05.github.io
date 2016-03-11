@@ -41,6 +41,10 @@ nav li a {
 	padding-right: 10px;
 }
 
+#social img {
+	display: inline-block;
+}
+
 
 /* --- HEADER --- */
 header {
