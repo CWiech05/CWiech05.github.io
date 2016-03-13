@@ -16,6 +16,12 @@ header,
 	text-align: center;
 }
 
+.portfolio,
+#story,
+#skills {
+	margin-top: 20px;
+}
+
 
 /* --- LINKS --- */
 a {
@@ -79,6 +85,14 @@ header h2 {
 
 
 /* --- SKILLS SECTION --- */
+#skills {
+	line-height: 0;
+}
+
+#skills h4 {
+	font-size: 1em;
+}
+
 
 
 
