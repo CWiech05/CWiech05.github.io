@@ -97,7 +97,15 @@ header h2 {
 
 
 /* --- SOCIAL SECTION --- */
+#social ul {
+	margin-left: 10%;
+}
 
+#social li {
+	display: inline-block;
+	padding-left: 10px;
+	padding-right: 10px;
+}
 
 
 /* --- FOOTER --- */
