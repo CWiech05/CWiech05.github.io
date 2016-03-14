@@ -24,14 +24,17 @@ header,
 
 
 /* --- LINKS --- */
-a {
+a,
+a.no-hover:hover {
 	text-decoration: none;
 	color: #54C84A;
 }
 
-a:hover {
+a:hover:not(.no-hover) {
 	color: #fff;
 }
+
+
 
 
 /* --- IMAGES --- */
