@@ -44,6 +44,10 @@ a:hover:not(.no-hover) {
 
 
 /* --- NAV --- */
+#top-nav {
+	margin-left: 15%;
+}
+
 nav li {
 	display: inline;
 }
@@ -121,6 +125,14 @@ header h2 {
 /* --- PORTFOLIO PAGE STYLES --- */
 #portfolio-header {
 	text-align: left;
+}
+
+#portfolio-header a {
+	color: #fff;
+}
+
+#portfolio-header a:hover {
+	font-weight: 700;
 }
 
 #project-details {
