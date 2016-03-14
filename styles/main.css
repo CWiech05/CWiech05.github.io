@@ -6,7 +6,9 @@ body {
 
 nav, 
 h1, 
-h3 {
+h3,
+h4,
+h5 {
 	font-weight: 700;
 	text-transform: uppercase;
 }
@@ -57,7 +59,7 @@ nav li a {
 }
 
 
-/* --- HEADER --- */
+/* --- HOME HEADER --- */
 header {
 	margin-top: 20px;
 	margin-bottom: 20px;
@@ -96,6 +98,11 @@ header h2 {
 
 
 /* --- SOCIAL SECTION --- */
+#social {
+	margin-top: 10%;
+	margin-bottom: 5%;
+}
+
 #social ul {
 	margin-left: 10%;
 }
@@ -112,7 +119,28 @@ header h2 {
 
 
 /* --- PORTFOLIO PAGE STYLES --- */
+#portfolio-header {
+	text-align: left;
+}
 
+#project-details {
+	margin-top: 5%;
+}
+
+#next {
+	margin-top: 35%;
+}
+
+#next h5,
+#next img {
+	display: inline;
+}
+
+#next img {
+	height: 35px;
+	width: 35px;
+	margin-left: 2%;
+}
 
 
 
