@@ -79,11 +79,7 @@ header h2 {
 }
 
 
-/* --- WORK SECTION --- */
-
-
-
-/* --- PLAY SECTION --- */
+/* --- WORK and PLAY SECTIONS --- */
 
 
 
@@ -98,6 +94,14 @@ header h2 {
 
 #skills h4 {
 	font-size: 1em;
+	margin-top: 15px;
+	margin-bottom: 0;
+	font-size: 1.2em;
+	text-transform: none;
+}
+
+#skills img {
+	border-radius: 10px;
 }
 
 
