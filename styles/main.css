@@ -149,6 +149,10 @@ footer p {
 	font-weight: 700;
 }
 
+#portfolio-page-images img {
+	margin-right: 2%;
+}
+
 #project-details {
 	margin-top: 5%;
 }
