@@ -44,8 +44,8 @@ a:hover:not(.no-hover) {
 
 
 /* --- NAV --- */
-#top-nav {
-	margin-left: 15%;
+#top-nav ul {
+	padding-left: 50%;
 }
 
 nav li {
@@ -58,9 +58,7 @@ nav li a {
 	padding-right: 10px;
 }
 
-#social img {
-	display: inline-block;
-}
+
 
 
 /* --- HOME HEADER --- */
@@ -80,8 +78,13 @@ header h2 {
 
 
 /* --- WORK and PLAY SECTIONS --- */
+.portfolio {
+	padding-left: 5%;
+}
 
-
+.portfolio img {
+	margin-right: 2%;
+}
 
 /* --- COMING SOON STYLES --- */
 
@@ -121,9 +124,16 @@ header h2 {
 	padding-right: 10px;
 }
 
+#social img {
+	display: inline-block;
+}
+
 
 /* --- FOOTER --- */
-
+footer p {
+	font-size: .8em;
+	padding: 2%;
+}
 
 
 /* --- PORTFOLIO PAGE STYLES --- */
