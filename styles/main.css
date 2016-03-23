@@ -77,6 +77,23 @@ header h2 {
 }
 
 
+/* --- UNDER CONSTRUCTION --- */
+#temporary {
+	margin-top: 20%;
+}
+
+#temporary h3,
+#temporary h4 {
+	text-transform: none;
+	text-align: center;
+	color: #fff;
+}
+
+#temporary h4 {
+	font-size: .8em;
+} 
+
+
 /* --- WORK and PLAY SECTIONS --- */
 .portfolio {
 	padding-left: 5%;
@@ -133,6 +150,7 @@ header h2 {
 footer p {
 	font-size: .8em;
 	padding: 2%;
+	margin-left: 40%;
 }
 
 
