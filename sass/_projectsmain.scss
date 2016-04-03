@@ -1,0 +1,79 @@
+// Projects Pages Common Styles
+
+// Portfolio header
+#portfolio-header {
+	background-color: $masterbackground;
+	margin-top: 10%;
+
+	a {
+		color: $portlinkcolor;
+	}
+
+	a:hover {
+		font-weight: $bold;
+	}
+
+	h3 {
+		color: $masteraccentcolor;
+	}
+}
+
+// Project images
+#portfolio-page-images {
+	margin-top: 2%;
+
+	img {
+		margin-right: 2%;
+		border: 4px solid $imgbordercolor;
+	}
+}
+
+// Project details
+#project-details {
+	margin-top: 5%;
+
+	h4 {
+		color: $masteraccentcolor;
+	}
+
+	h5 {
+		display: inline;
+		color: $masteraccentcolor;
+	}
+
+	h5:hover {
+		color: $portlinkcolor;
+	}
+
+	#previous-nolink {
+		color: #848E9C;
+	}
+
+	img {
+		display: inline;
+		height: 35px;
+		width: 35px;
+		margin-right: 2%;
+	}
+}
+
+// Next Link
+#next {
+	margin-top: 32%;
+
+	h5 {
+		color: $masteraccentcolor;
+		display: inline;
+	}
+
+	img {
+		display: inline;
+		height: 35px;
+		width: 35px;
+		margin-left: 2%;
+	}
+
+	h5:hover {
+		color: $portlinkcolor;
+	}
+}
