@@ -70,7 +70,7 @@
 
 	    <!-- Contact Form -->
 	    <div class="row">
-		    <form action="index.php" method="post">
+		    <form method="post" action="contact.php">
 		    	<div class="row">
 			    	<div class="small-4 small-offset-1 column">
 			    		<label>Name</label>
