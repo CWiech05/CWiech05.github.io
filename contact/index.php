@@ -1,4 +1,21 @@
-<!DOCTYPE html>
+<?php
+	$name = $_POST['name'];
+	$email = $_POST['email'];
+	$message = $_POST['message'];
+	$from = 'From: Website Visitor';
+	$to = 'cwiech@alumni.nd.edu';
+	$subject = 'Message from My Portfolio Page';
+
+	$body = "From: $name\n E-Mail: $email\n Message:\n $message";
+	    
+	if ($_POST['submit']) {
+	    if (mail ($to, $subject, $body, $from)) { 
+        	echo '<p>Your message has been sent!</p>';
+    	} else { 
+        	echo '<p>Something went wrong, go back and try again!</p>'; 
+    	}
+	}
+?><!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
@@ -6,8 +23,8 @@
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Christina Wiech - Front End Developer</title>
 		<meta name="description" content="Christina Wiech's front end developer portfolio site">
-	    <link rel="stylesheet" href="css/foundation.css" />
-	    <link rel="stylesheet" type="text/css" href="css/app.css">
+	    <link rel="stylesheet" href="../css/foundation.css" />
+	    <link rel="stylesheet" type="text/css" href="../css/app.css">
 	</head>
 
 	<body>
@@ -16,20 +33,24 @@
 		<div class="row max-width">
 			<div class="small-12 column no-margin no-padding">
 				<header>
-					<img src="./images/site-logo-green.png" alt="Logo of the initials CW" />
+					<img src="../images/site-logo-green.png" alt="Logo of the initials CW" />
 
 					<nav id="top-nav">
 						<ul class="no-bullet">
 							<li>
-								<a href="#about">About</a>
+              					<a href="../index.html">Home</a>
+            				</li>
+
+							<li>
+								<a href="../index.html#about">About</a>
 							</li>
 
 							<li>
-								<a href="#portfolio-top">Portfolio</a>
+								<a href="../index.html#portfolio-top">Portfolio</a>
 							</li>
 
 							<li>
-								<a href="http://cwiech05.github.io/contact/index.html">Contact</a>
+								<a href="index.html">Contact</a>
 							</li>
 						</ul>
 					</nav>
@@ -37,140 +58,54 @@
 			</div>
 		</div>
 
-		<!-- Banner -->
-		<div class="row max-width" id="banner">
-			<div class="small-8 small-offset-2 column">
-				<section>
-					<h1>Christina Wiech</h1>
-
-					<h2>Front end web development from a liberal arts mind</h2>
-
-					<ul class="no-bullet">
-						<li>
-							<a href="#portfolio-top">
-								<svg xmlns="http://www.w3.org/2000/svg" width="112" height="86" viewBox="0 0 512 486.4"><path d="M460.8 102.4H358.4V51.2c0-28.3-22.9-51.2-51.2-51.2H204.8c-28.3 0-51.2 22.9-51.2 51.2v51.2H51.2c-28.3 0-50.9 22.9-50.9 51.2L0 435.2c0 28.3 22.9 51.2 51.2 51.2h409.6c28.3 0 51.2-22.9 51.2-51.2V153.6C512 125.3 489.1 102.4 460.8 102.4zM307.2 102.4H204.8V51.2h102.4V102.4z" fill="#69E885"/></svg>
-							</a>
-						</li>
-
-						<li>
-							<a href="#about">
-								<svg xmlns="http://www.w3.org/2000/svg" width="95" height="95" viewBox="0 0 512 512"><path d="M14.1 430.1c-18.7 18.7-18.7 49.1 0 67.8 9.4 9.4 21.6 14 33.9 14 12.3 0 24.5-4.7 33.9-14l157.4-157.4 -67.8-67.8L14.1 430.1zM407.6 138.3l68.5-35.4L512 33.5 478.5 0l-69.4 35.9 -35.5 68.5 -83.5 83.5 33.9 33.9L407.6 138.3zM422.6 320.3c-2.2-0.1-4.2-0.7-6.5-0.7 -11.7 0-22.8 2.4-33.2 6.2L186.1 129.1c3.8-10.4 6.2-21.5 6.2-33.2 0-2.2-0.5-4.3-0.6-6.5C188.3 39.5 147.2 0 96.4 0 81.6 0 67.8 3.6 55.3 9.6l63.7 63.7c3.4 3.4 5.7 7.3 7.2 11.5 4.2 11.3 1.9 24.5-7.2 33.7 -6.2 6.2-14.4 9.4-22.6 9.4 -3.8 0-7.5-0.8-11.1-2.2 -4.2-1.6-8.2-3.8-11.5-7.2L10.1 54.8C4.1 67.3 0.5 81.1 0.5 95.9c0 50.8 39.5 91.9 89.5 95.3 2.2 0.1 4.2 0.6 6.5 0.6 11.7 0 22.8-2.4 33.2-6.2L326.4 382.4c-3.8 10.4-6.2 21.5-6.2 33.2 0 2.2 0.5 4.3 0.6 6.5 3.4 49.9 44.5 89.4 95.3 89.4 14.8 0 28.6-3.6 41.1-9.6l-63.7-63.7c-3.4-3.3-5.6-7.3-7.2-11.5 -4.2-11.3-1.9-24.6 7.2-33.7 6.2-6.2 14.4-9.4 22.6-9.4 3.8 0 7.5 0.8 11.1 2.2 4.2 1.6 8.2 3.8 11.5 7.2l63.7 63.7c6-12.5 9.6-26.3 9.6-41.1C512 364.8 472.4 323.7 422.6 320.3z" fill="#69E885"/></svg>
-							</a>
-						</li>
-
-						<li>
-							<a href="#social">
-								<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 1024 1024"><path d="M512 16L0 398.2v608h1024v-608L512 16zM370.4 288.8c15-27.4 35.8-48.2 62-61.8 26.2-13.8 56.2-20.8 90-20.8 28.6 0 54 5.6 76.2 16.6 22.2 11.2 39.2 27 51 47.4 11.6 20.6 17.6 43 17.6 67.2 0 29-9 55-26.8 78.6 -22.4 29.4-51 44.2-86 44.2 -9.4 0-16.4-1.6-21.2-5 -4.8-3.4-8-8.2-9.6-14.6C510.2 453.6 494.8 460 477.2 460c-18.8 0-34.4-6.6-46.8-19.4C418 427.6 411.8 410.2 411.8 388.8c0-26.8 7.4-51 22.4-73 18.2-26.8 41.4-40.2 69.8-40.2 20.2 0 35.2 7.8 44.8 23.2l4.4-19h45L572.4 402c-1.6 7.8-2.4 12.6-2.4 15 0 3 0.6 5 2 6.4 1.2 1.4 2.8 2.2 4.6 2.2 5.6 0 12.6-3.2 21.2-9.8 11.6-8.6 21-20.2 28-34.6 7.2-14.6 10.8-29.6 10.8-45.2 0-27.8-10-51.2-30.2-70.2 -20.2-18.6-48.6-28.2-84.8-28.2 -30.8 0-56.8 6.2-78.2 19C422 269 406 286.8 395 309.6c-10.8 22.6-16.2 46.4-16.2 71 0 23.8 6.2 45.8 18.2 65.4 12.2 19.8 29.2 34 51 43s46.8 13.4 75 13.4c27 0 50.4-3.8 70-11.4s35.2-18.8 47.2-34h36.2c-11.4 23-28.8 41-52.2 54.2 -27 15-59.8 22.4-98.4 22.4 -37.6 0-69.8-6.2-97-19C401.4 502 381.2 483.2 368 458.6 354.8 434 348.2 407 348.2 378 347.8 346.2 355.2 316.4 370.4 288.8zM36.2 410.4L414 663.8 36.2 956.2V410.4zM64.8 975.6L512 629.4 959.2 975.6H64.8zM987.8 956.2L610 663.8 987.8 410.4V956.2z" fill="#69E885"/><path d="M508 306c-9.6 0-18.6 3.8-27 11.4s-14.6 18.2-18.8 32.2S456 376 456 386.8c0 14.4 2.8 25 8.6 31.8 6 6.8 13.2 10.2 21.8 10.2 6.6 0 12.6-1.6 18.2-4.8 4.2-2.2 8.6-5.8 12.8-10.6 6-7 11.2-17 15.6-30.4 4.4-13.2 6.6-25.6 6.6-37 0-12.8-3-22.6-9-29.4C524.6 309.8 517 306.2 508 306z" fill="#69E885"/></svg>
-							</a>
-						</li>
-					</ul>
-				</section>
-			</div>
-		</div>
-
-		<!-- Portfolio Projects Grid -->
+		<!-- Contact header -->
 		<div class="row">
-			<div class="small-10 small-offset-1 column">
-				<section id="portfolio">
-					<h3><a name="portfolio-top" class="no-hover">My Work</a></h3>
+	      <div class="small-4 small-offset-1 column">
+	        <header id="portfolio-header">
+	          <h3>Get In Touch</h3>
 
-					<!-- First row of projects -->
-					<div class="row">
-						<div class="small-4 column">
-							<a href="http://cwiech05.github.io/portfolio-personal/index.html">
-				      				<img src="images/personal.png" alt="Screenshot image of this website" class="thumbnail" />
-				      		</a>
-				      	</div>
+	        </header>
+	      </div>
+	    </div>
 
-				      	<div class="small-4 column">
-				      		<a href="http://cwiech05.github.io/portfolio-launchhack/index.html">
-				      			<img src="images/choose-concierge-crop.png" alt="Mockup of a mobile app" class="thumbnail" />
-				      		</a>
-				      	</div>
+	    <!-- Contact Form -->
+	    <div class="row">
+		    <form action="index.php" method="post">
+		    	<div class="row">
+			    	<div class="small-4 small-offset-1 column">
+			    		<label>Name</label>
+			    		<input type="text" name="name" placeholder="Who are you?"/>
+			    	</div>
+			    </div>
 
-				      	<div class="small-4 column">
-				      		<a href="http://cwiech05.github.io/portfolio-peoplehedge/index.html">
-				      			<img src="images/ph-logo.png" alt="PeopleHedge logo" class="thumbnail" />
-				      		</a>
-			      		</div>
-					</div>
+			    <div class="row">
+			    	<div class="small-4 small-offset-1 column">
+			    		<label for="mail">E-mail</label>
+			    		<input name="email" type="email" placeholder="kylo.ren@thefirstorder.org" />
+			    	</div>
+			    </div>
 
-					<!-- Second row of projects -->
-					<div class="row">
-						<div class="small-4 column">
-							<a href="http://cwiech05.github.io/portfolio-rey/index.html">
-				      			<img src="images/rey-bb8.png" alt="Screenshot of Rey and BB-8 made from HTML and CSS" class="thumbnail"/>
-				      		</a>
-			      		</div>
+			    <div class="row">
+			    	<div class="small-4 small-offset-1 column">
+			    		<label for="msg">Message</label>
+			    		<textarea id="msg" placeholder="Do, or do not. There is no try."></textarea>
+			    	</div>
+			    </div>
 
-			      		<div class="small-4 column">
-				      		<a href="#">
-				      			<img src="images/coming-soon.png" alt="Screenshot of a mini JavaScript project" class="thumbnail" />
-				      		</a>
-			      		</div>
-
-			      		<div class="small-4 column">
-				      		<a href="http://cwiech05.github.io/portfolio-endangered/index.html">
-				      			<img src="images/coming-soon.png" alt="Screenshot of a web app of the endangered species list" class="thumbnail" />
-				      		</a>
-			      		</div>
-					</div>
-				</section>
-			</div>
+			    <div class="row">
+			    	<div class="button small-1 small-offset-1 column">
+			    		<button type="submit" name="submit">Send</button>
+			    	</div>
+			    </div>
+		    </form>
 		</div>
+	    
 
-		<!-- Story and Skills Grid -->
-		<div class="row">
-			<div class="small-6 small-offset-1 column">
-				<section id="story">
-					<h3><a name="about" class="no-hover">My Story</a></h3>
-
-					<p>Let me see your identification. You don't need to see his identification. We don't need to see his identification. These are not the droids your looking for. These are not the droids we're looking for. He can go about his business. You can go about your business. Move along. Move along. Move along.</p>
-
-	          		<p>Hello there! Come here my little friend. Don't be afraid. Don't worry, he'll be all right. What happened? Rest easy, son, you've had a busy day. You're fortunate you're still in one piece. Ben? Ben Kenobi! Boy, am I glad to see you! The Jundland wastes are not to be traveled lightly. Tell me young Luke, what brings you out this far? Oh, this little droid! I think he's searching for his former master...I've never seen such devotion in a droid before...there seems to be no stopping him. He claims to be the property of an Obi-Wan Kenobi. Is he a relative of yours? Do you know who he's talking about?</p>
-				</section>
-			</div>
-
-			<div class="small-5 column">
-				<section id="skills">
-					<h3>My Skills</h3>
-
-					<div class="small-6 column no-margin no-padding">
-						<h4>Comfortable With:</h4>
-						<ul class="no-bullet">
-							<li>HTML5</li>
-
-							<li>CSS3 &amp; CSS Frameworks</li>
-
-							<li>Wireframing &amp; Prototyping</li>
-
-							<li>Content Research</li>
-						</ul>
-					</div>
-
-					<div class="small-6 column">
-						<h4>Familiar With:</h4>
-						<ul class="no-bullet">
-							<li>JavaScript &amp; jQuery</li>
-
-							<li>Responsive Web Design</li>
-
-							<li>Sass</li>
-
-							<li>Git</li>
-
-							<li>UI &amp; UX Design</li>
-						</ul>
-					</div>
-				</section>
-			</div>
-		</div>
-
-		<!-- Social Links Grid -->
+	    <!-- Social Links Grid -->
 		<div class="row" id="social">
 			<div class="small-6 small-offset-3 column">
 				<section>
-					<h3><a name="social" class="no-hover">Find Me Here</a></h3>
+					<h3>Find Me Here</h3>
 
 					<ul class="no-bullet">
 		      			<li>
@@ -208,21 +143,26 @@
 			</div>
 		</div>
 
+		<!-- Contact page bottom section -->
 		<div class="row" id="bottom">
 			<footer>
-				<div class="small-4 column">
+				<div class="small-5 column">
 					<nav>
 		      	  		<ul class="no-bullet">
 		      	  			<li>
-		      	  				<a href="#about">About</a>
+		      	  				<a href="../index.html">Home</a>
+		      	  			</li>
+		      	  			
+		      	  			<li>
+		      	  				<a href="../index.html#about">About</a>
 		      	  			</li>
 
 		      	  			<li>
-		      	  				<a href="#portfolio-top">Portfolio</a>
+		      	  				<a href="../index.html#portfolio-top">Portfolio</a>
 		      	  			</li>
 
 		      	  			<li>
-		      	  				<a href="http://cwiech05.github.io/contact/index.html">Contact</a>
+		      	  				<a href="index.html">Contact</a>
 		      	  			</li>
 		      	  		</ul>
 	      	  		</nav>
@@ -233,7 +173,6 @@
 	      	  	</div>
 			</footer>
 		</div>
-
 
 	</body>
 </html>
