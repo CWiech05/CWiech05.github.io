@@ -82,12 +82,11 @@ nav {
 
 #bottom {
   background-color: #848E9C; }
-
-footer p {
-  font-size: .8em;
-  padding-right: 2%;
-  padding-top: 10%;
-  margin-left: 50%; }
+  #bottom footer p {
+    font-size: .8em;
+    padding-right: 2%;
+    padding-top: 10%;
+    margin-left: 50%; }
 
 #banner {
   padding-top: 80px;
