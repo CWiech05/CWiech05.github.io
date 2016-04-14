@@ -8,16 +8,107 @@
 	}
 }
 
+// To prevent homepage images from squishing, to adjust banner sizing
 @media (max-width: 750px) {
-	#portfolio img {
-		height: 100px;
-		width: 160px;
+	#banner {
+		height: 50%;
+		padding-top: 20px;
+
+		h1 {
+			font-size: 2em;
+		}
+
+		h2 {
+			font-size: 1em;
+			margin-top: 10px;
+		}
+
+		svg {
+			height: 50px;
+			width: 50px;
+		}
+	}
+
+	#portfolio  {
+		margin-top: 1%;
+
+		img {
+			height: 100px;
+			width: 160px;
+		}
 	}
 }
 
+// To adjust skills list sizing
+@media (max-width: 700px) {
+	#skills {
+		h4 {
+			font-size: .8em;
+		}
+
+		li {
+			font-size: .8em;
+		}
+	}
+
+}
+
+// To prevent homepage images from squishing, to adjust banner sizing
 @media (max-width: 550px) {
-	#portfolio img {
-		height: 80px;
-		width: 140px;
+	
+
+	#portfolio {
+		img {
+			height: 80px;
+			width: 140px;
+		}
 	}
 }
+
+// To adjust story and skills font sizes
+@media (max-width: 520px) {
+	#story {
+		p {
+			font-size: .8em;
+		}
+	}
+
+	#skills {
+		h4 {
+			font-size: .6em;
+		}
+
+		li {
+			font-size: .6em;
+		}
+	}
+}
+
+// To adjust banner sizing
+@media (max-width: 490px) {
+	#banner {
+		padding-top: 10px;
+
+		h1 {
+			font-size: 1.5em;
+		}
+
+		h2 {
+			font-size: .8em;
+		}
+	}
+}
+
+// To adjust skills font sizes
+@media (max-width: 440px) {
+	#skills {
+		h4 {
+			font-size: .5em;
+		}
+
+		li {
+			font-size: .5em;
+		}
+	}
+}
+

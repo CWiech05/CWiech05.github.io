@@ -201,12 +201,51 @@ footer p {
     height: 150px;
     width: 210px; } }
 @media (max-width: 750px) {
-  #portfolio img {
-    height: 100px;
-    width: 160px; } }
+  #banner {
+    height: 50%;
+    padding-top: 20px; }
+    #banner h1 {
+      font-size: 2em; }
+    #banner h2 {
+      font-size: 1em;
+      margin-top: 10px; }
+    #banner svg {
+      height: 50px;
+      width: 50px; }
+
+  #portfolio {
+    margin-top: 1%; }
+    #portfolio img {
+      height: 100px;
+      width: 160px; } }
+@media (max-width: 700px) {
+  #skills h4 {
+    font-size: .8em; }
+  #skills li {
+    font-size: .8em; } }
 @media (max-width: 550px) {
   #portfolio img {
     height: 80px;
     width: 140px; } }
+@media (max-width: 520px) {
+  #story p {
+    font-size: .8em; }
+
+  #skills h4 {
+    font-size: .6em; }
+  #skills li {
+    font-size: .6em; } }
+@media (max-width: 490px) {
+  #banner {
+    padding-top: 10px; }
+    #banner h1 {
+      font-size: 1.5em; }
+    #banner h2 {
+      font-size: .8em; } }
+@media (max-width: 440px) {
+  #skills h4 {
+    font-size: .5em; }
+  #skills li {
+    font-size: .5em; } }
 
 /*# sourceMappingURL=app.css.map */
