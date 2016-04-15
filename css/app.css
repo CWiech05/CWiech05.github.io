@@ -110,7 +110,30 @@ nav {
     filter: drop-shadow(12px 12px 7px rgba(255, 255, 255, 0.6)); }
 
 #portfolio {
-  margin-top: 40px; }
+  margin-top: 40px;
+  	/*.tile {
+  		height: 210px;
+  		width: 270px;
+  		position: relative;
+  
+  		span {
+  			position: absolute;
+  			top: 25%;
+  			left: 20%;
+  			text-transform: uppercase;
+  			font-weight: $bold;
+  			font-size: 1.2em;
+  			visibility: hidden;
+  		}
+  
+  		span:hover {
+  			visibility: visible;
+  		}
+  	}*/
+  /*img:hover {
+  	opacity: 0.3;
+  	transition: opacity .5s ease-in-out;
+  }*/ }
   #portfolio h3 {
     color: #69E885;
     margin-bottom: 2%;

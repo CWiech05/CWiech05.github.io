@@ -46,6 +46,26 @@
 		word-spacing: .2em;
 	}
 
+	/*.tile {
+		height: 210px;
+		width: 270px;
+		position: relative;
+
+		span {
+			position: absolute;
+			top: 25%;
+			left: 20%;
+			text-transform: uppercase;
+			font-weight: $bold;
+			font-size: 1.2em;
+			visibility: hidden;
+		}
+
+		span:hover {
+			visibility: visible;
+		}
+	}*/
+
 	img {
 		margin-bottom: 15%;
 		border: solid 4px #848E9C;
@@ -53,10 +73,14 @@
 		width: 260px;
 	}
 
+	/*img:hover {
+		opacity: 0.3;
+		transition: opacity .5s ease-in-out;
+	}*/
+
 	.thumbnail:hover, 
 	.thumbnail:focus {
 	    box-shadow: 0 0 20px 1px rgba(255, 255, 255, 0.8);
-
 	}
 }
 
