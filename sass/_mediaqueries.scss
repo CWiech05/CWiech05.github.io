@@ -37,6 +37,19 @@
 			width: 160px;
 		}
 	}
+
+	#social {
+		padding-top: 2%;
+		padding-bottom: 2%;
+	}
+
+	#bottom {
+
+		a {
+			font-size: 1em;
+			padding: 2%;
+		}
+	}
 }
 
 // To adjust skills list sizing
@@ -48,6 +61,13 @@
 
 		li {
 			font-size: .8em;
+		}
+	}
+
+	#social {
+		svg {
+			height: 40px;
+			width: 46px;
 		}
 	}
 
