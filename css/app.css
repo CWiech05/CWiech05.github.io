@@ -201,22 +201,31 @@ nav {
     width: 35px;
     margin-right: 2%; }
 
-#next {
+.next {
   margin-top: 32%; }
-  #next h5 {
+  .next h5 {
     color: #69E885;
     display: inline; }
-  #next img {
+  .next img {
     display: inline;
     height: 35px;
     width: 35px;
     margin-left: 2%; }
-  #next h5:hover {
+  .next h5:hover {
     color: #fff; }
+
+#next-personal {
+  margin-top: 21%; }
+
+#brewery-next {
+  margin-top: 28%; }
 
 .jarvis-images img {
   height: 300px;
   width: 180px; }
+
+#rey-next {
+  margin-top: 19%; }
 
 @media (max-width: 950px) {
   #portfolio img {
