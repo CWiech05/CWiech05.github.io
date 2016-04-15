@@ -227,6 +227,9 @@ nav {
 #rey-next {
   margin-top: 19%; }
 
+#js-next {
+  margin-top: 15%; }
+
 @media (max-width: 950px) {
   #portfolio img {
     height: 150px;
