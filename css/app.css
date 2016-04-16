@@ -114,25 +114,19 @@ nav {
 
 #portfolio {
   margin-top: 40px;
-  	/*.tile {
-  		height: 210px;
-  		width: 270px;
-  		position: relative;
-  
-  		span {
-  			position: absolute;
-  			top: 25%;
-  			left: 20%;
-  			text-transform: uppercase;
-  			font-weight: $bold;
-  			font-size: 1.2em;
-  			visibility: hidden;
-  		}
-  
-  		span:hover {
-  			visibility: visible;
-  		}
-  	}*/
+  /*.tile {
+  	height: 210px;
+  	width: 270px;
+  	position: relative;
+  }*/
+  /*span {
+  	position: absolute;
+  	top: 25%;
+  	left: 20%;
+  	text-transform: uppercase;
+  	font-weight: $bold;
+  	font-size: 1.2em;
+  }*/
   /*img:hover {
   	opacity: 0.3;
   	transition: opacity .5s ease-in-out;
@@ -205,7 +199,7 @@ nav {
     margin-right: 2%; }
 
 .next {
-  margin-top: 32%; }
+  margin-left: 25%; }
   .next h5 {
     color: #69E885;
     display: inline; }
@@ -217,21 +211,9 @@ nav {
   .next h5:hover {
     color: #fff; }
 
-#next-personal {
-  margin-top: 21%; }
-
-#brewery-next {
-  margin-top: 28%; }
-
 .jarvis-images img {
   height: 300px;
   width: 180px; }
-
-#rey-next {
-  margin-top: 19%; }
-
-#js-next {
-  margin-top: 15%; }
 
 #portfolio-header a {
   padding-right: 5%; }
