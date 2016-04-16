@@ -86,7 +86,13 @@ nav {
     font-size: .8em;
     padding-right: 2%;
     padding-top: 10%;
-    margin-left: 50%; }
+    margin-left: 50%;
+    float: right; }
+  #bottom nav {
+    float: left; }
+  #bottom li a {
+    font-size: 1em;
+    text-align: left; }
 
 #banner {
   padding-top: 80px;
@@ -105,9 +111,6 @@ nav {
   #banner li {
     display: inline-block;
     padding: 10% 5%; }
-  #banner svg:hover {
-    -webkit-filter: drop-shadow(12px 12px 7px rgba(255, 255, 255, 0.6));
-    filter: drop-shadow(12px 12px 7px rgba(255, 255, 255, 0.6)); }
 
 #portfolio {
   margin-top: 40px;

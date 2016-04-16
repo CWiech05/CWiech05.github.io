@@ -131,7 +131,17 @@ nav {
 			padding-right: 2%;
 			padding-top: 10%;
 			margin-left: 50%;
+			float: right;
 		}
+	}
+
+	nav {
+		float: left;
+	}
+
+	li a {
+		font-size: 1em;
+		text-align: left;
 	}
 }
 
