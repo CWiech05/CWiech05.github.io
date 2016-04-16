@@ -218,6 +218,10 @@ nav {
 #portfolio-header a {
   padding-right: 5%; }
 
+.ph-images img {
+  height: 300px;
+  width: 180px; }
+
 @media (max-width: 950px) {
   #portfolio img {
     height: 150px;
